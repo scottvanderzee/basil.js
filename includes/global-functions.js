@@ -54,7 +54,7 @@ if (!Array.prototype.map) {
 }
 
 /**
-* Used to run a function on all elements of an array. Please note the existance of the convenience methods b.stories(), b.paragraphs(), b.lines(), b.words() and b.characters() that are used to iterate through all instances of the given type in the given document.
+* Used to run a function on all elements of an array. Please note the existence of the convenience methods b.stories(), b.paragraphs(), b.lines(), b.words() and b.characters() that are used to iterate through all instances of the given type in the given document.
 *
 * @cat Data
 * @subcat Array Functions
@@ -198,7 +198,7 @@ glob.HashList = function () {
   }
   
   /**
-   * Returns an array of all keys that are sorted by their values from highest to lowest. Please note that this only works if you have conistently used Numbers for values. 
+   * Returns an array of all keys that are sorted by their values from highest to lowest. Please note that this only works if you have consistently used Numbers for values. 
    * 
    * @cat Data
    * @subcat HashList
