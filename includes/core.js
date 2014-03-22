@@ -10,7 +10,7 @@ var init = function() {
   currStrokeTint = 100;
   currFillTint = 100;
   currCanvasMode = pub.PAGE;
-  currColorMode = pub.RGB;
+  currColorMode = pub.CMYK;
 };    
 
 
@@ -153,9 +153,9 @@ var runDrawLoop = function() {
 
 var welcome = function() {
   clearConsole();
-  println("Using basil.js "
-      + pub.VERSION
-      + " ...");
+  println("Using basil.js");
+        //      + pub.VERSION
+        //      + " ...");
 };
 
 var currentDoc = function (mode) {
@@ -209,7 +209,7 @@ var setCurrDoc = function(doc) {
   currFontSize = currDoc.textDefaults.pointSize;
   currAlign = currDoc.textDefaults.justification;
   currLeading = currDoc.textDefaults.leading;
-  currKerning = 0;
+  currKerning = 0; // Should be "Metrics" !!!
   currTracking = currDoc.textDefaults.tracking;
   pub.units(pub.PT);
   
