@@ -209,7 +209,7 @@ var setCurrDoc = function(doc) {
   currFontSize = currDoc.textDefaults.pointSize;
   currAlign = currDoc.textDefaults.justification;
   currLeading = currDoc.textDefaults.leading;
-  currKerning = 0; // Should be "Metrics" !!!
+  currKerning = currDoc.textDefaults.kerningMethod;
   currTracking = currDoc.textDefaults.tracking;
   pub.units(pub.PT);
   
