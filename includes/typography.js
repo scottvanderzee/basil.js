@@ -34,7 +34,7 @@ pub.text = function(txt, x, y, w, h) {
     'fillColor': currFillColor,
     'justification': currAlign,
     'leading': currLeading,
-    'kerningValue': currKerning,
+//    'kerningValue': currKerning,
     'tracking': currTracking
   });
 
@@ -212,20 +212,23 @@ pub.textLeading = function(leading) {
   return currLeading;
 };
 
-/**
- * Returns the current kerning and sets it if argument kerning is given.
- *
- * @cat Typography
- * @method textKerning
- * @param  {Number} [kerning] The value to set.
- * @return {Number}           The current kerning.
- */
-pub.textKerning = function(kerning) {
-  if (arguments.length === 1) {
-    currKerning = kerning;
-  }
-  return currKerning;
-};
+/* ======================================
+	 * Returns the current kerning and sets it if argument kerning is given.
+	 *
+	 * @cat Typography
+	 * @method textKerning
+	 * @param  {Number} [kerning] The value to set.
+	 * @return {Number}           The current kerning.
+	 */
+
+	/**
+	pub.textKerning = function(kerning) {
+	  if (arguments.length === 1) {
+	    currKerning = kerning;
+	  }
+	  return currKerning;
+	};
+====================================== */
 
 /**
  * Returns the current tracking and sets it if argument tracking is given.
